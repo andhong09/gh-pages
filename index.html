@@ -1,6 +1,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Andrew Hong</title>
   <meta name="description" content="The HTML5 Herald">
@@ -39,7 +41,7 @@
     }
 
     .section.project2 {
-      background-color: #778e93;
+      background-color: #dedede;
     }
 
     .section.project3 {
@@ -47,7 +49,7 @@
     }
 
     .section.project4 {
-      background-color: #9b9b9b;
+      background-color: #bfffb3;
     }
 
     .section.bottom{
@@ -56,9 +58,11 @@
 
     .img.project1{
     max-width: 400px;
+    width:100%;
     margin: 0 auto;
     top: 100px;
     position: relative;
+    padding:0 20 0;
     }
 
     .site-header {
@@ -107,6 +111,12 @@
     z-index: 9999;
     }
 
+    .project-text{
+      position:absolute;
+      text-align:center;
+      padding:0 20px 0;
+    }
+
     .project-name {
       text-transform: uppercase;
       letter-spacing:2px;
@@ -135,6 +145,8 @@
       letter-spacing:2px;
       text-transform:uppercase;
       margin:0 auto;
+      font-size:2em;
+      line-height:1.3;
     }
 
   .thumbnail>img {
@@ -242,19 +254,6 @@
     width:100%;
   }
 
-
-    @media screen and (max-width: 440px) { 
-    .how-body{
-      margin:60px 10px 30px;
-    }
-
-    .cta-container{
-      left: 0;
-      margin-left: 0px;
-      width: 100%;
-    }
-  }
-  
 
 
 
@@ -389,16 +388,6 @@
 
   }
 
-  @media (max-width: 575px) {
-    body {
-        padding-top: 130px;
-    }
-
-
-    /*.btn.btn_specialsignup {
-      margin-top: 5px;
-    }*/
-  }
 
   @media (max-width: 575px) {
 
@@ -431,7 +420,7 @@
 </head>
 
 <body style="padding-bottom:0px;">
-    <div class="container-fluid desktopStuff" style="padding-right:0px;padding-left:0px;">
+    <div class="container-fluid" style="padding-right:0px;padding-left:0px;">
       <!--Header-->
       <div class="site-header">
           <a href="/" title="Andrew Hong">
@@ -445,7 +434,7 @@
           <h1 class="header-text">ANDREW HONG MAKES SOME COOL SHIT.
 HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.</h1>
         </div> 
-        <img class="fullbanner-image" src="https://raw.githubusercontent.com/andhong09/gh-pages/master/banner-robot-lt.jpg">
+        <img class="fullbanner-image" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/banner-robot-lt.jpg">
       </div>
 
       <div class="row">
@@ -455,7 +444,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-left vertical-center">
           </div>
-          <div class="img-text-overlay center" style="position:absolute;text-align:center;">
+          <div class="project-text img-text-overlay center">
             <a href="/project.html"><h3 class="project-name">Trove: Branding + Digital</h3></a>
             <p class="project-description">Democratizing design by allowing anyone to customize 3D-printed jewelry - no experience required.</p>
           </div>
@@ -465,7 +454,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
       <div class="row">
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
-          <div class="img-text-overlay center" style="position:absolute;text-align:center;">
+          <div class="project-text img-text-overlay center">
             <h3 class="project-name">Trove: Physical</h3>
             <p class="project-description">Jewelry, packaging, and print design for an early stage fashion tech startup.</p>
           </div>
@@ -482,7 +471,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         </div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-left vertical-center"></div>
-          <div class="img-text-overlay center" style="position:absolute;text-align:center;">
+          <div class="project-text img-text-overlay center">
             <h3 class="project-name">Trove Sellers</h3>
             <p class="project-description">Creating a platform where anyone can create and sell a jewelry line with no inventory risk.</p>
           </div>
@@ -492,7 +481,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
       <div class="row">
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
-          <div class="img-text-overlay center" style="position:absolute;text-align:center;">
+          <div class="project-text img-text-overlay center">
             <h3 class="project-name">Idea Hub @MIT</h3>
             <p class="project-description">Designing and launching a maker space at the MIT Museum with STEM, art, and design cirriculum.</p>
           </div>
@@ -508,7 +497,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         </div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-left vertical-center"></div>
-          <div class="img-text-overlay center" style="position:absolute;text-align:center;">
+          <div class="project-text img-text-overlay center">
             <h3 class="project-name">Typography & Illustration</h3>
             <p class="project-description">A sampling of aesthetic explorations and exercises</p>
           </div>
@@ -517,7 +506,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
 
       <div class="row">
         <div class="col-xs-12 col-md-12 section bottom">
-          <div class="img-text-overlay center" style="position:absolute;text-align:center;">
+         <div class="project-text img-text-overlay center">
             <h3 class="project-name">HELLO THERE</h3>
             <p class="about-description">I'm Andrew Hong. I design at Trove in New York City.</p>
           </div>
