@@ -31,6 +31,7 @@
 
     .section {
       min-height: 500px;
+      background-color:#ffffff;
     }
 
     .section.project1 {
@@ -51,6 +52,13 @@
 
     .section.bottom{
       background-color:#f6f6f6;
+    }
+
+    .img.project1{
+    max-width: 400px;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;
     }
 
     .site-header {
@@ -284,10 +292,10 @@
 
 
   .fullbanner-image{
-    width:100%;
+    position: fixed;
+    left: 50%;
+    margin-left: -750px;    
     min-height:600px;
-    margin-left: auto;
-    margin-right: auto;
      -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
@@ -436,13 +444,13 @@
         <div class="img-text-overlay hero">
           <h1 class="header-text">ANDREW HONG MAKES SOME COOL SHIT.
 HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.</h1>
-          
         </div> 
+        <img class="fullbanner-image" src="https://raw.githubusercontent.com/andhong09/gh-pages/master/banner-robot-lt.jpg">
       </div>
 
       <div class="row">
         <div class="col-xs-12 col-md-6 section project1">
-
+          <img class="img-responsive img project1" src="https://storage.googleapis.com/troveup-imagestore/assets/img/customizer-mock-2.gif" alt="Trove Customizer">
         </div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-left vertical-center">
