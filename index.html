@@ -42,7 +42,8 @@
           </a>
       </div>
      <!--End of Header-->
-
+     <div id="loaderContainer" style="display:none;"></div>
+     <div id="contentContainer">
       <div class="welcome-banner-container">
         <div class="img-text-overlay hero">
           <h1 class="header-text">ANDREW HONG MAKES SOME COOL SHIT.
@@ -51,7 +52,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <img class="fullbanner-image" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/robot-banner-lt.png">
       </div>
 
-      <a class="row row-container" href="project.html">
+      <div class="row row-container" id="project1">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section project1">
           <img class="img-responsive img project1" src="https://storage.googleapis.com/troveup-imagestore/assets/img/customizer-mock-2.gif" alt="Trove Customizer">
@@ -64,7 +65,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Democratizing design by allowing anyone to customize 3D-printed jewelry - no experience required.</p>
           </div>
         </div>  
-      </a>
+      </div>
 
       <a class="row row-container desktopStuff" href="project.html">
         <div class="row-overlay right"></div>
@@ -156,14 +157,6 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         </div>  
       </a>
 
-      <div id="poop">
-          Some text thing
-
-      </div>
-      <button id="changeButton">
-        Click this
-      </button>
-
       <div class="row">
         <div class="col-xs-12 col-md-12 section bottom">
          <div class="project-text img-text-overlay center">
@@ -173,6 +166,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         </div>
           
       </div>
+    </div>
 
 
 
@@ -224,9 +218,13 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
     </div>
   
   <script>
-    $('#changeButton').on('click', function(){
-      $('#poop').empty();
-      $('#poop').html('<b>boldpoop</b>');
+    $('#project1').on('click', function(){
+      $.get('project.html', function(data){
+      $('#loaderContainer').html(data);
+       $('#contentContainer').hide(200);
+       $('html, body').animate({scrollTop:0});
+       $('#loaderContainer').fadeIn(700);
+      });
     });
   </script>
 
