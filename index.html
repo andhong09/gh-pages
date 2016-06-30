@@ -65,8 +65,8 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
           </div>
         </div>  
       </div>
-
-      <div class="row row-container desktopStuff" id="project2">
+      <div id="project2">
+      <div class="row row-container desktopStuff">
         <div class="row-overlay right"></div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
@@ -80,7 +80,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         </div>
       </div>
 <!--Mobile Version-->
-      <a class="row row-container mobileStuff" href="project.html">
+      <div class="row row-container mobileStuff">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section project2">
           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
@@ -93,9 +93,10 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Jewelry, packaging, and print design for an early stage fashion tech startup.</p>
           </div>
         </div>
-      </a>
+      </div>
+    </div>
 <!--End Mobile Version-->
-      <a class="row row-container" href="project.html">
+      <div class="row row-container" id="project3">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section project3">
           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
@@ -108,9 +109,9 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Creating a platform where anyone can create and sell a jewelry line with no inventory risk.</p>
           </div>
         </div>  
-      </a>
-
-      <a class="row row-container desktopStuff" href="project.html">
+      </div>
+      <div id="project4">
+      <div class="row row-container desktopStuff">
         <div class="row-overlay right"></div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
@@ -122,10 +123,10 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <div class="col-xs-12 col-md-6 section-image-container section project4 ">
           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
         </div>
-      </a>
+      </div>
 
       <!--Mobile Version-->
-      <a class="row row-container mobileStuff" href="project.html">
+      <div class="row row-container mobileStuff">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section project4">
           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
@@ -138,10 +139,11 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Designing and launching a maker space at the MIT Museum with STEM, art, and design cirriculum.</p>
           </div>
         </div>
-      </a>
+      </div>
+    </div>
 <!--End Mobile Version-->
 
-      <a class="row row-container" href="project.html">
+      <div class="row row-container" id="project5">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section project2">
           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
@@ -154,7 +156,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">A sampling of aesthetic explorations and exercises</p>
           </div>
         </div>  
-      </a>
+      </div>
 
       <div class="row">
         <div class="col-xs-12 col-md-12 section bottom">
@@ -194,6 +196,34 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
        $('#loaderContainer').fadeIn(700);
       });
     });
+
+    $('#project3').on('click', function(){
+      $.get('trove-sellers.html', function(data){
+      $('#loaderContainer').html(data);
+       $('#contentContainer').hide(200);
+       $('html, body').animate({scrollTop:0});
+       $('#loaderContainer').fadeIn(700);
+      });
+    });
+
+    $('#project4').on('click', function(){
+      $.get('idea-hub.html', function(data){
+      $('#loaderContainer').html(data);
+       $('#contentContainer').hide(200);
+       $('html, body').animate({scrollTop:0});
+       $('#loaderContainer').fadeIn(700);
+      });
+    });
+
+    $('#project5').on('click', function(){
+      $.get('typography.html', function(data){
+      $('#loaderContainer').html(data);
+       $('#contentContainer').hide(200);
+       $('html, body').animate({scrollTop:0});
+       $('#loaderContainer').fadeIn(700);
+      });
+    });
+
   </script>
 
   </body>

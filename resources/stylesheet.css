@@ -75,7 +75,7 @@
       width:55%;
       height:500px;
       text-align:center;
-      background-color: rgba(255,255,255,.4);
+      background-color: rgba(255,255,255,.6);
       z-index: 999;
       -webkit-transition: all 0.20s ease-in-out;
       -moz-transition: all 0.20s ease-in-out;
@@ -134,7 +134,7 @@
     }
 
     .section.project3 {
-      background-color: #f5e9ff;
+      background-color: #ebd3ff;
     }
 
     .section.project4 {
@@ -351,6 +351,10 @@
 
   .welcome-banner-container.trove-branding{
     background-color:#cceeff;
+  }
+
+  .welcome-banner-container.trove-physical{
+    background-color:#dedede;
   }
 
   .welcome-row{
