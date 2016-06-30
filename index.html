@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Andrew Hong</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic" rel="stylesheet" type="text/css">
@@ -67,7 +66,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         </div>  
       </div>
 
-      <a class="row row-container desktopStuff" href="project.html">
+      <div class="row row-container desktopStuff" id="project2">
         <div class="row-overlay right"></div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
@@ -79,7 +78,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <div class="col-xs-12 col-md-6 section-image-container section project2">
           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
         </div>
-      </a>
+      </div>
 <!--Mobile Version-->
       <a class="row row-container mobileStuff" href="project.html">
         <div class="row-overlay"></div>
@@ -174,52 +173,21 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
     </div>
 
 
-<!--       <div class="row welcome-row">
-        <div class="col-xs-4 col-md-4">
-          <a id="getstartdiscover" href="/freering">
-            <img src="https://storage.googleapis.com/troveup-imagestore/assets/img/referral-img-plain.jpg" class="img-responsive">
-            <div class="img-text-overlay bottom" style="position:absolute;text-align:center;">
-                  <p style="letter-spacing:2px;">Refer Friends. Earn Jewelry.</p>
-                  <a id="getstartdiscover" href="/freering" class="btn btn-open btn-overlay">START EARNING</a>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-4">
-          <a id="getstartdiscover" href="/try">
-            <img src="https://storage.googleapis.com/troveup-imagestore/assets/img/giftcard-banner-med.jpg" class="img-responsive">
-            <div class="img-text-overlay bottom" style="position:absolute;text-align:center;">
-                  <p style="letter-spacing:2px;">Give a Gift Card</p>
-                  <a id="getstartdiscover" href="/giftcard" class="btn btn-open btn-overlay">BUY NOW</a>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-4">
-          <a id="getstartdiscover" target="_blank" href="http://instagram.com/troveup">
-            <img src="https://storage.googleapis.com/troveup-imagestore/assets/img/insta-graphic.jpg" class="img-responsive">
-            <div class="img-text-overlay bottom" style="position:absolute;text-align:center;">
-                  <p style="letter-spacing:2px;">Join us on Instagram</p>
-                  <a id="getstartdiscover"  target="_blank" href="http://instagram.com/troveup" class="btn btn-open btn-overlay">FOLLOW US</a>
-            </div>  
-          </a>
-        </div>
-      </div> -->
-
-      
-
- <!--      <div class="row">
-        <div class="col-xs-12" style="text-align:center;margin:30px 0 100px;">
-          <span style="margin: 40px auto;">Contact us at <a href="mailto:hello@troveup.com" target="_blank"><img src="https://storage.googleapis.com/troveup-imagestore/assets/img/email-icon.svg" style="height:15px;margin-right:5px;position:relative;top:-2px;"> hello@troveup.com</a>.</span>
-        </div>; 
-      </div> -->
-
-
-
 
     </div>
   
   <script>
     $('#project1').on('click', function(){
-      $.get('project.html', function(data){
+      $.get('trove-digital.html', function(data){
+      $('#loaderContainer').html(data);
+       $('#contentContainer').hide(200);
+       $('html, body').animate({scrollTop:0});
+       $('#loaderContainer').fadeIn(700);
+      });
+    });
+
+    $('#project2').on('click', function(){
+      $.get('trove-physical.html', function(data){
       $('#loaderContainer').html(data);
        $('#contentContainer').hide(200);
        $('html, body').animate({scrollTop:0});
