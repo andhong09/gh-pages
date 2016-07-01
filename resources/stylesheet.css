@@ -1,6 +1,17 @@
 * {
       letter-spacing:.5px;
-      font-family: "Raleway", Helvetica, sans-serif;
+      font-family: "Asap", Helvetica, sans-serif;
+    }
+
+    .row.header{
+      padding-top:300px;
+      text-align:left;
+    }
+
+    @media (max-width: 575px) {
+      .row.header{
+        padding-top:200px;
+      }
     }
 
     /* unvisited link */
@@ -28,7 +39,7 @@
     }
 
     .section {
-      min-height: 500px;
+      min-height: 550px;
       background-color:#ffffff;
       -webkit-transition: all 0.20s ease-in-out;
     -moz-transition: all 0.20s ease-in-out;
@@ -73,7 +84,7 @@
       opacity: 0;
       position:absolute;
       width:55%;
-      height:500px;
+      height:550px;
       text-align:center;
       background-color: rgba(255,255,255,.6);
       z-index: 999;
@@ -108,6 +119,7 @@
     .project-name.test{
       text-decoration: none;
       display:inline-block;
+      font-weight:700;
       border-bottom: 2px solid transparent;
       -webkit-transition: all 0.20s ease-in-out;
       -moz-transition: all 0.20s ease-in-out;
@@ -125,24 +137,8 @@
       opacity: 1;
     }
 
-    .section.project1 {
-      background-color: #cceeff;
-    }
-
-    .section.project2 {
-      background-color: #dedede;
-    }
-
-    .section.project3 {
-      background-color: #ebd3ff;
-    }
-
-    .section.project4 {
-      background-color: #adff9d;
-    }
-
     .section.bottom{
-      background-color:#f6f6f6;
+      background-color:#dedede;
     }
 
     .img.project1{
@@ -170,12 +166,16 @@
     width: 100%;
     text-align: center;
     top: 0;
+    background-color:#ffffff;
     }
 
     .nav-logo {
-    width: 100px;
+    height: 80px;
     padding-top: 16px;
     padding-bottom: 12px;
+    opacity:.8;
+    background: url(https://s3.amazonaws.com/ahong-portfolio-images/andhong-logo.svg) center center no-repeat;
+    margin: 20 auto;
     }
 
     .arrow-right {
@@ -190,7 +190,7 @@
     .arrow-right.vertical-center {
     position:absolute;
     right:-60px;
-    top:180px;
+    top:205px;
     z-index: 9999;
     }
 
@@ -205,7 +205,7 @@
     .arrow-left.vertical-center {
     position:absolute;
     left:-60px;
-    top:180px;
+    top:205px;
     z-index: 9999;
     }
 
@@ -267,7 +267,9 @@
       text-transform:uppercase;
       margin:0 auto;
       font-size:2em;
-      line-height:1.3;
+      line-height:1.6;
+      padding: 0 25 0;
+      text-decoration: underline;
     }
 
     .container-project-body{
@@ -282,6 +284,16 @@
       margin: 50 auto 0;
     }
 
+    .tasks{
+      text-align:center;
+    }
+
+    .section-break-text {
+      font-size:32;
+      font-weight:700;
+      text-align:center;
+    }
+
     .project-page.img-full-width{
       max-width:800px;
       position:relative;
@@ -290,12 +302,22 @@
     }
 
     .img-full-width{
+      width:85%;
+      margin:0 auto;
+    }
+
+    .hero-img{
       width:100%;
     }
 
     .project-page.name {
       text-transform: uppercase;
       letter-spacing:2px;
+      font-weight:700;
+      text-align:center;
+      position:relative;
+      top:-15px;
+      text-decoration: underline;
     }
 
     .project-page.description {
@@ -305,6 +327,10 @@
       text-align: center;
       margin: 0 auto;
       padding-top:15px;
+    }
+
+    .project-page.hero{
+      margin-top:100px;
     }
 
   .thumbnail>img {
@@ -321,7 +347,6 @@
     margin:40px 5% 20px;
     padding: 30px 2% 30px;
     text-align:center;
-    /*background-color: #dedede;*/
     border-top:2px solid #dedede;
     border-bottom:2px solid #dedede;
 
@@ -346,15 +371,52 @@
       margin:0 auto;
       text-align: center;
       background-color:#f6f6f6;
-      min-height:600px;
+      min-height:700px;
   }
 
-  .welcome-banner-container.trove-branding{
+  .welcome-banner-container.project{
+    min-height:500px;
+  }
+
+  .welcome-banner-container.index{
+    background: url(https://s3.amazonaws.com/ahong-portfolio-images/hello-there.png) no-repeat left center;
+    
+    -o-background-size: 50% auto;
+    -webkit-background-size: 50% auto;
+    -moz-background-size: 50% auto;
+    background-size: 50% auto;
+  }
+
+  @media(max-width: 768px) {
+    .welcome-banner-container.index{
+      -o-background-size: 80% auto;
+    -webkit-background-size: 80% auto;
+    -moz-background-size: 80% auto;
+    background-size: 80% auto;
+    }
+  }
+
+  .trove-branding-bg{
     background-color:#cceeff;
   }
 
-  .welcome-banner-container.trove-physical{
-    background-color:#dedede;
+  .trove-physical-bg{
+    background-color:#ffe4d9;
+    background: url(https://s3.amazonaws.com/ahong-portfolio-images/necklaces-split.jpg) center center no-repeat;
+  }
+
+  .trove-sellers-bg{
+    background-color:#e4d8fe;
+    
+  }
+
+  .idea-hub-bg{
+    background-color:#d3ede2;
+    background:url(https://s3.amazonaws.com/ahong-portfolio-images/idea-hub-flatpack-green.jpg) center center no-repeat;
+  }
+
+  .typography-bg{
+    background-color:#fe2626;
   }
 
   .welcome-row{
@@ -426,8 +488,8 @@
   .fullbanner-image{
     position: fixed;
     left: 50%;
-    margin-left: -750px;    
-    min-height:600px;
+    margin-left: -910px;    
+    min-height:750px;
      -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
@@ -460,7 +522,7 @@
   .img-text-overlay.hero{
     left:0;
     right:0;
-   padding: 100 20 50;
+   padding: 175 20 50;
     position:absolute;
     text-align:center;
     margin: 0 auto;

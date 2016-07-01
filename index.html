@@ -7,9 +7,7 @@
   <title>Andrew Hong</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     
 <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -33,27 +31,37 @@
 </head>
 
 <body style="padding-bottom:0px;">
-    <div class="container-fluid" style="padding-right:0px;padding-left:0px;">
+    <div class="container-fluid">
       <!--Header-->
       <div class="site-header">
           <a href="index.html" title="Andrew Hong">
-            <img class="nav-logo" src="https://andhong09.github.io/gh-pages/img/ahong-logo.png">
+            <div class="nav-logo"></div>
           </a>
       </div>
      <!--End of Header-->
      <div id="loaderContainer" style="display:none;"></div>
      <div id="contentContainer">
-      <div class="welcome-banner-container">
-        <div class="img-text-overlay hero">
+      <div class="welcome-banner-container index">
+
+        <div class="row header">
+        <div class="col-xs-12 col-md-5 col-sm-5">
+        </div>
+        <div class="col-xs-12 col-md-7 col-sm-7">
+          <h1 class="header-text">ANDREW HONG MAKES SOME COOL SHIT.
+HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.</h1>
+        </div>  
+      </div>
+
+        <!-- <div class="img-text-overlay hero">
           <h1 class="header-text">ANDREW HONG MAKES SOME COOL SHIT.
 HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.</h1>
         </div> 
-        <img class="fullbanner-image" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/robot-banner-lt.png">
+        <!-- <img class="fullbanner-image" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/robot-banner-lt.png"> -->
       </div>
 
       <div class="row row-container" id="project1">
         <div class="row-overlay"></div>
-        <div class="col-xs-12 col-md-6 section-image-container section project1">
+        <div class="col-xs-12 col-md-6 section-image-container section trove-branding-bg">
           <img class="img-responsive img project1" src="https://storage.googleapis.com/troveup-imagestore/assets/img/customizer-mock-2.gif" alt="Trove Customizer">
         </div>
         <div class="col-xs-12 col-md-6 section">
@@ -71,25 +79,25 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
           <div class="project-text img-text-overlay center">
-            <h3 class="project-name test">Trove: Physical</h3>
+            <h3 class="project-name test">Trove: Physical Product</h3>
             <p class="project-description">Jewelry, packaging, and print design for an early stage fashion tech startup.</p>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 section-image-container section project2">
-          <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
-        </div>
+        <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
+<!--           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
+ -->        </div>
       </div>
 <!--Mobile Version-->
       <div class="row row-container mobileStuff">
         <div class="row-overlay"></div>
-        <div class="col-xs-12 col-md-6 section-image-container section project2">
-          <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
+        <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
+          <!-- <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools"> -->
         </div>
 
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-up center"></div>
           <div class="project-text img-text-overlay center">
-            <h3 class="project-name test">Trove: Physical</h3>
+            <h3 class="project-name test">Trove: Physical Product</h3>
             <p class="project-description">Jewelry, packaging, and print design for an early stage fashion tech startup.</p>
           </div>
         </div>
@@ -98,18 +106,19 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
 <!--End Mobile Version-->
       <div class="row row-container" id="project3">
         <div class="row-overlay"></div>
-        <div class="col-xs-12 col-md-6 section-image-container section project3">
-          <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
+        <div class="col-xs-12 col-md-6 section-image-container section trove-sellers-bg">
+          <img class="img-responsive img project2" src="https://s3.amazonaws.com/ahong-portfolio-images/trove-sellers-mockup.jpg" alt="Trove Sellers Platform">
         </div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-left vertical-center"></div>
           <div class="arrow-up center"></div>
           <div class="project-text img-text-overlay center">
-            <h3 class="project-name test">Trove Sellers</h3>
+            <h3 class="project-name test">Trove: Sellers Platform</h3>
             <p class="project-description">Creating a platform where anyone can create and sell a jewelry line with no inventory risk.</p>
           </div>
         </div>  
       </div>
+
       <div id="project4">
       <div class="row row-container desktopStuff">
         <div class="row-overlay right"></div>
@@ -120,16 +129,15 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Designing and launching a maker space at the MIT Museum with STEM, art, and design cirriculum.</p>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 section-image-container section project4 ">
-          <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
+        <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
+
         </div>
       </div>
 
       <!--Mobile Version-->
       <div class="row row-container mobileStuff">
         <div class="row-overlay"></div>
-        <div class="col-xs-12 col-md-6 section-image-container section project4">
-          <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
+        <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
         </div>
 
         <div class="col-xs-12 col-md-6 section">
@@ -145,7 +153,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
 
       <div class="row row-container" id="project5">
         <div class="row-overlay"></div>
-        <div class="col-xs-12 col-md-6 section-image-container section project2">
+        <div class="col-xs-12 col-md-6 section-image-container section typography-bg">
           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
         </div>
         <div class="col-xs-12 col-md-6 section">
