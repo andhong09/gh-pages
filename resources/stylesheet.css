@@ -267,7 +267,7 @@
       text-transform:uppercase;
       margin:0 auto;
       font-size:2em;
-      line-height:1.6;
+      line-height:2;
       padding: 0 25 0;
       text-decoration: underline;
     }
@@ -344,6 +344,20 @@
     border: 0px solid #FFF;
   }
 
+  .social-icon{
+    width:25px;
+    margin:0 10 0;
+
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+  }
+
+  .social-icon:hover{
+    opacity:.6;
+  }
+
   .text-explanation{
     margin:40px 5% 20px;
     padding: 30px 2% 30px;
@@ -351,20 +365,6 @@
     border-top:2px solid #dedede;
     border-bottom:2px solid #dedede;
 
-  }
-  .how-trove-works.mobile {
-    margin:0 0 20px;
-  }
-
-  .four-headers {
-    font-family:'Vollkorn', serif; 
-    font-style: italic;
-    font-size: 28px;
-    margin-bottom:15px;
-  }
-
-  .cta-header{
-    font-family:'Vollkorn', serif; 
   }
 
   .welcome-banner-container{
@@ -446,15 +446,11 @@
   }
 
 
-  .favorites-img:hover{
-    opacity:.7;
-  }
 
   .img-text-overlay-wrapper{
     position:absolute;
     width:100%;
   }
-
 
 
 
@@ -479,16 +475,6 @@
   }
 
 
-  .cta-container{
-    background-color: rgba(255,255,255,0.75);
-    width: 480px;
-    z-index:1;
-    position:absolute;
-    left:50%;
-    margin-left:-240px;
-    text-align:center;
-    padding:50px 0;
-  }
 
 
   .fullbanner-image{
