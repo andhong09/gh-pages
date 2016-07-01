@@ -138,11 +138,11 @@
     }
 
     .section.bottom{
-      background-color:#dedede;
+      background-color:#ffffff;
     }
 
     .img.project1{
-    max-width: 400px;
+    max-width: 450px;
     width:100%;
     margin: 0 auto;
     top: 100px;
@@ -151,7 +151,7 @@
     }
 
     .img.project2{
-    max-width: 450px;
+    max-width: 600px;
     width:100%;
     margin: 0 auto;
     top: 100px;
@@ -273,7 +273,7 @@
     }
 
     .container-project-body{
-      padding:0 25 0;
+      padding:0;
     }
     
 
@@ -282,6 +282,7 @@
       max-width:600px;
       position:relative;
       margin: 50 auto 0;
+      padding:0 15 0;
     }
 
     .tasks{
@@ -295,14 +296,14 @@
     }
 
     .project-page.img-full-width{
-      max-width:800px;
+      max-width:1000px;
       position:relative;
       text-align: center;
       margin: 50 auto 0;
     }
 
     .img-full-width{
-      width:85%;
+      width:100%;
       margin:0 auto;
     }
 
@@ -371,7 +372,7 @@
       margin:0 auto;
       text-align: center;
       background-color:#f6f6f6;
-      min-height:700px;
+      min-height:800px;
   }
 
   .welcome-banner-container.project{
@@ -381,13 +382,17 @@
   .welcome-banner-container.index{
     background: url(https://s3.amazonaws.com/ahong-portfolio-images/hello-there.png) no-repeat left center;
     
-    -o-background-size: 50% auto;
-    -webkit-background-size: 50% auto;
-    -moz-background-size: 50% auto;
-    background-size: 50% auto;
+    -o-background-size: 60% auto;
+    -webkit-background-size: 60% auto;
+    -moz-background-size: 60% auto;
+    background-size: 60% auto;
   }
 
   @media(max-width: 768px) {
+
+    .welcome-banner-container{
+      min-height:700px;
+    }
     .welcome-banner-container.index{
       -o-background-size: 80% auto;
     -webkit-background-size: 80% auto;
@@ -397,7 +402,7 @@
   }
 
   .trove-branding-bg{
-    background-color:#cceeff;
+    background-color:#e2e2e1;
   }
 
   .trove-physical-bg{
@@ -416,7 +421,8 @@
   }
 
   .typography-bg{
-    background-color:#fe2626;
+    background-color:#9cbed3;
+    background: url(https://s3.amazonaws.com/ahong-portfolio-images/drowning-robot-01.png) center center no-repeat;
   }
 
   .welcome-row{
