@@ -59,7 +59,7 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <!-- <img class="fullbanner-image" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/robot-banner-lt.png"> -->
       </div>
 
-      <div class="row row-container" id="project1">
+      <a href="trove-digital.html" class="row row-container" id="project1">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section trove-branding-bg">
           <img class="img-responsive img project1" src="https://storage.googleapis.com/troveup-imagestore/assets/img/customizer-mock-2.gif" alt="Trove Customizer">
@@ -72,9 +72,10 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Democratizing design by allowing anyone to customize 3D-printed jewelry - no experience required.</p>
           </div>
         </div>  
-      </div>
-      <div id="project2">
-      <div class="row row-container desktopStuff">
+      </a>
+
+      
+      <a href="trove-physical.html" class="row row-container desktopStuff" id="project2">
         <div class="row-overlay right"></div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
@@ -86,9 +87,9 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
 <!--           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
  -->        </div>
-      </div>
+      </a>
 <!--Mobile Version-->
-      <div class="row row-container mobileStuff">
+      <a href="trove-physical.html" div class="row row-container mobileStuff" id="project2">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
           <!-- <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools"> -->
@@ -101,10 +102,10 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Jewelry, packaging, and print design for an early stage fashion tech startup.</p>
           </div>
         </div>
-      </div>
-    </div>
+      </a>
+    
 <!--End Mobile Version-->
-      <div class="row row-container" id="project3">
+      <a href="trove-sellers.html" class="row row-container" id="project3">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section trove-sellers-bg">
           <img class="img-responsive img project2" src="https://s3.amazonaws.com/ahong-portfolio-images/trove-sellers-mockup.jpg" alt="Trove Sellers Platform">
@@ -117,10 +118,10 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Creating a platform where anyone can create and sell a jewelry line with no inventory risk.</p>
           </div>
         </div>  
-      </div>
+      </a>
 
-      <div id="project4">
-      <div class="row row-container desktopStuff">
+      
+      <a href="idea-hub.html" class="row row-container desktopStuff" id="project4">
         <div class="row-overlay right"></div>
         <div class="col-xs-12 col-md-6 section">
           <div class="arrow-right vertical-center"></div>
@@ -132,10 +133,10 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
         <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
 
         </div>
-      </div>
+      </a>
 
       <!--Mobile Version-->
-      <div class="row row-container mobileStuff">
+      <a href="idea-hub.html" class="row row-container mobileStuff" id="project4">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
         </div>
@@ -147,11 +148,11 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Designing and launching a maker space at the MIT Museum with STEM, art, and design cirriculum.</p>
           </div>
         </div>
-      </div>
-    </div>
+      </a>
+    
 <!--End Mobile Version-->
 
-      <div class="row row-container" id="project5">
+      <a href="typography.html" class="row row-container" id="project5">
         <div class="row-overlay"></div>
         <div class="col-xs-12 col-md-6 section-image-container section typography-bg">
         </div>
@@ -163,17 +164,21 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             <p class="project-description">Personal work. For fun.</p>
           </div>
         </div>  
-      </div>
+      </a>
 
       <div class="row">
         <div class="col-xs-12 col-md-12 section bottom">
          <div class="project-text img-text-overlay center">
             <h3 class="project-name">HELLO THERE</h3>
             <p class="about-description">I'm Andrew Hong. I design at Trove in New York City.</p>
+
+            <p style="margin: 40px auto;"><a href="mailto:andrewhong09@gmail.com" target="_blank"><img src="https://storage.googleapis.com/troveup-imagestore/assets/img/email-icon.svg" style="height:15px;margin-right:5px;position:relative;top:-2px;"> andrewhong09@gmail.com</a></p>
           </div>
         </div>
-          
       </div>
+
+
+
     </div>
 
 
@@ -187,49 +192,33 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
   
   <script>
     $('#project1').on('click', function(){
-      $.get('trove-digital.html', function(data){
-      $('#loaderContainer').html(data);
-       $('#contentContainer').hide(200);
-       $('html, body').animate({scrollTop:0});
-       $('#loaderContainer').fadeIn(700);
-      });
+      loadNewContent('trove-digital.html');
     });
 
     $('#project2').on('click', function(){
-      $.get('trove-physical.html', function(data){
-      $('#loaderContainer').html(data);
-       $('#contentContainer').hide(200);
-       $('html, body').animate({scrollTop:0});
-       $('#loaderContainer').fadeIn(700);
-      });
+      loadNewContent('trove-physical.html');
     });
 
     $('#project3').on('click', function(){
-      $.get('trove-sellers.html', function(data){
-      $('#loaderContainer').html(data);
-       $('#contentContainer').hide(200);
-       $('html, body').animate({scrollTop:0});
-       $('#loaderContainer').fadeIn(700);
-      });
+      loadNewContent('trove-sellers.html');
     });
 
     $('#project4').on('click', function(){
-      $.get('idea-hub.html', function(data){
-      $('#loaderContainer').html(data);
-       $('#contentContainer').hide(200);
-       $('html, body').animate({scrollTop:0});
-       $('#loaderContainer').fadeIn(700);
-      });
+      loadNewContent('idea-hub.html');
     });
 
     $('#project5').on('click', function(){
-      $.get('typography.html', function(data){
+      loadNewContent('typography.html');
+    });
+
+    function loadNewContent(url){
+      $.get(url, function(data){
       $('#loaderContainer').html(data);
        $('#contentContainer').hide(200);
        $('html, body').animate({scrollTop:0});
-       $('#loaderContainer').fadeIn(700);
+       $('#loaderContainer').slideDown();
       });
-    });
+    }
 
   </script>
 
