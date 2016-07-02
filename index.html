@@ -40,15 +40,17 @@
 
 <body style="padding-bottom:0px;">
 <div class="container-fluid">
-  <!--Header-->
+  <div id="loaderContainer" style="display:none;"></div>
+  <div id="contentContainer">
+
+    <!--Header-->
   <div class="site-header">
     <a href="index.html" title="Andrew Hong">
       <div class="nav-logo"></div>
     </a>
   </div>
   <!--End of Header-->
-  <div id="loaderContainer" style="display:none;"></div>
-  <div id="contentContainer">
+
     <div class="welcome-banner-container index">
 
       <div class="row header">
@@ -56,7 +58,7 @@
         </div>
         <div class="col-xs-12 col-md-7 col-sm-7">
           <h1 class="header-text">Andrew Hong is a multidisciplinary designer based in New York.
-            He works on cool things at <span style="color:#beb8b8;">TROVE</span> and is secretly a lion tamer, luchador,
+            He works on cool things at <span style="color:#f26868;">TROVE</span> and is secretly a lion tamer, luchador,
             and who knows what else.</h1>
         </div>
       </div>
@@ -70,10 +72,12 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
 
     <a href="trove-digital.html" class="row row-container" id="project1">
       <div class="row-overlay"></div>
-      <div class="col-xs-12 col-md-6 section-image-container section trove-branding-bg">
-        <img class="img-responsive img project1"
-             src="https://storage.googleapis.com/troveup-imagestore/assets/img/customizer-mock-2.gif"
-             alt="Trove Customizer">
+      <div class="section-image-constrainer">
+        <div class="col-xs-12 col-md-6 section-image-container section trove-branding-bg">
+          <img class="img-responsive img project1"
+               src="https://storage.googleapis.com/troveup-imagestore/assets/img/customizer-mock-2.gif"
+               alt="Trove Customizer">
+        </div>
       </div>
       <div class="col-xs-12 col-md-6 section">
         <div class="arrow-left vertical-center"></div>
@@ -97,15 +101,19 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             startup.</p>
         </div>
       </div>
-      <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
-        <!--           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
-         -->        </div>
+      <div class="section-image-constrainer">
+        <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
+          <!--           <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools">
+           -->        </div>
+       </div>
     </a>
     <!--Mobile Version-->
     <a href="trove-physical.html" div class="row row-container mobileStuff" id="project2">
       <div class="row-overlay"></div>
-      <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
-        <!-- <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools"> -->
+      <div class="section-image-constrainer">
+        <div class="col-xs-12 col-md-6 section-image-container section trove-physical-bg">
+          <!-- <img class="img-responsive img project2" src="https://raw.githubusercontent.com/andhong09/gh-pages/gh-pages/img/idea-hub-flat-white.png" alt="Tools"> -->
+        </div>
       </div>
 
       <div class="col-xs-12 col-md-6 section">
@@ -121,10 +129,12 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
     <!--End Mobile Version-->
     <a href="trove-sellers.html" class="row row-container" id="project3">
       <div class="row-overlay"></div>
-      <div class="col-xs-12 col-md-6 section-image-container section trove-sellers-bg">
-        <img class="img-responsive img project2"
-             src="https://s3.amazonaws.com/ahong-portfolio-images/trove-sellers-mockup.jpg"
-             alt="Trove Sellers Platform">
+      <div class="section-image-constrainer">
+        <div class="col-xs-12 col-md-6 section-image-container section trove-sellers-bg">
+          <img class="img-responsive img project2"
+               src="https://s3.amazonaws.com/ahong-portfolio-images/trove-sellers-mockup.jpg"
+               alt="Trove Sellers Platform">
+        </div>
       </div>
       <div class="col-xs-12 col-md-6 section">
         <div class="arrow-left vertical-center"></div>
@@ -148,16 +158,19 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
             design cirriculum.</p>
         </div>
       </div>
-      <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
-
+      <div class="section-image-constrainer">
+        <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
+        </div>
       </div>
     </a>
 
     <!--Mobile Version-->
     <a href="idea-hub.html" class="row row-container mobileStuff" id="project4">
       <div class="row-overlay"></div>
-      <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
-      </div>
+      <div class="section-image-constrainer">
+        <div class="col-xs-12 col-md-6 section-image-container section idea-hub-bg">
+        </div>
+      <div>
 
       <div class="col-xs-12 col-md-6 section">
         <div class="arrow-up center"></div>
@@ -173,7 +186,9 @@ HE’S A DESIGNER, ENTREPRENEUR, MAGICIAN, LION TAMER, AND WHO KNOWS WHAT ELSE.<
 
     <a href="typography.html" class="row row-container" id="project5">
       <div class="row-overlay"></div>
-      <div class="col-xs-12 col-md-6 section-image-container section typography-bg">
+      <div class="section-image-constrainer">
+        <div class="col-xs-12 col-md-6 section-image-container section typography-bg">
+        </div>
       </div>
       <div class="col-xs-12 col-md-6 section">
         <div class="arrow-left vertical-center"></div>
