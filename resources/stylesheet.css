@@ -4,7 +4,7 @@
     }
 
     .row.header{
-      padding-top:300px;
+      padding-top:200px;
       text-align:left;
     }
 
@@ -15,7 +15,7 @@
 
     @media (max-width: 575px) {
       .row.header{
-        padding-top:200px;
+        padding-top:100px;
       }
     }
 
@@ -90,7 +90,7 @@
       position:absolute;
       width:50%;
       height:550px;
-      margin:30 0 30;
+      margin:0 0 30;
       text-align:center;
       background-color: rgba(255,255,255,.6);
       z-index: 999;
@@ -100,11 +100,14 @@
       -o-transition: all 0.20s ease-in-out;
     }
 
+
+
      @media(max-width: 992px) {
       .row-overlay{
         width:100%;
       }
-  }
+      
+    }
 
     .row-overlay.right{
       left:50%;
@@ -653,6 +656,6 @@
       }
   }
 
-  .section-image-constrainer{
-    margin:30px;
-  }
+  /*.section-image-constrainer{
+    margin: 0px 10px 0px;
+  }*/
