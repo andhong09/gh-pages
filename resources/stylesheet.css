@@ -4,7 +4,7 @@
     }
 
     .row.header{
-      padding-top:200px;
+      padding-top:100px;
       text-align:left;
     }
 
@@ -15,7 +15,7 @@
 
     @media (max-width: 575px) {
       .row.header{
-        padding-top:100px;
+        padding-top:25px;
       }
     }
 
@@ -50,6 +50,12 @@
     -moz-transition: all 0.20s ease-in-out;
     -ms-transition: all 0.20s ease-in-out;
     -o-transition: all 0.20s ease-in-out;
+    }
+
+    @media (max-width: 575px) {
+      .section{
+        min-height:375px;
+      }
     }
 
     .section-image-container{
@@ -197,11 +203,11 @@
     }
 
     .nav-logo {
-    height: 80px;
+    height: 120px;
     padding-top: 16px;
     padding-bottom: 12px;
     opacity:.8;
-    background: url(https://s3.amazonaws.com/ahong-portfolio-images/andhong-logo.svg) center center no-repeat;
+    background: url(https://s3.amazonaws.com/ahong-portfolio-images/ahong-logo.svg) center center no-repeat;
     margin: 20 auto;
     }
 
@@ -299,9 +305,9 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 768px) {
       .header-text{
-        font-size:1.5em;
+        font-size:1.3em;
         padding:0 10 0;
       }
     }
@@ -406,7 +412,7 @@
       margin:0 auto;
       text-align: center;
       background-color:#f6f6f6;
-      min-height:800px;
+      min-height:550px;
   }
 
   .welcome-banner-container.project{
@@ -416,16 +422,15 @@
   .welcome-banner-container.index{
     background: url(https://s3.amazonaws.com/ahong-portfolio-images/hello-there.png) no-repeat left center;
     
-    -o-background-size: 60% auto;
-    -webkit-background-size: 60% auto;
-    -moz-background-size: 60% auto;
-    background-size: 60% auto;
+    -o-background-size: 40% auto;
+    -webkit-background-size: 40% auto;
+    -moz-background-size: 40% auto;
+    background-size: 40% auto;
   }
 
   @media(max-width: 768px) {
-
     .welcome-banner-container{
-      min-height:700px;
+      min-height:400px;
     }
     .welcome-banner-container.index{
       -o-background-size: 80% auto;
