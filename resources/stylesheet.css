@@ -8,6 +8,10 @@ html{
 
     }
 
+    .text-section h2, h3, h6{
+      color: #8b8b8b;
+    }
+
     body{
       font-size:1.125rem;
       line-height:2rem;
@@ -23,6 +27,7 @@ html{
     h2, h3, h6{
       text-transform:uppercase;
       font-weight: 700;
+      letter-spacing:4px;
     }
 
     .row.header{
@@ -42,7 +47,6 @@ html{
     .container-fluid{
       padding-left:0;
       padding-right:0;
-      background-color:#f6f6f6;
     }
 
     @media (max-width: 575px) {
@@ -303,7 +307,6 @@ html{
 
     .project-name {
       text-transform: uppercase;
-      letter-spacing:2px;
       -webkit-transition: all 0.20s ease-in-out;
     -moz-transition: all 0.20s ease-in-out;
     -ms-transition: all 0.20s ease-in-out;
@@ -409,7 +412,7 @@ html{
 
     .project-page-name {
       text-transform: uppercase;
-      letter-spacing:2px;
+      letter-spacing:4px;
       font-weight:700;
       text-align:center;
       position:relative;
