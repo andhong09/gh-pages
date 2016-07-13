@@ -469,12 +469,14 @@ html{
 
   }
 
+
   .welcome-banner-container{
       position:relative;
       margin:0 auto;
       text-align: center;
       background-color:#f6f6f6;
       min-height:550px;
+      width:90%;
   }
 
   .welcome-banner-container.project{
