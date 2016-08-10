@@ -72,13 +72,19 @@
   </div>
   <!--End of Header-->
 
-    <div class="welcome-banner-container index">
+    <div class="welcome-banner-container">
 
-      <div class="row header">
-        <div class="col-xs-12 col-md-5 col-sm-5">
+      <div class="row header" style="padding-top:50px;">
+        <!-- <div class="col-xs-12 col-md-5 col-sm-5">
+        </div> -->
+        <div class="col-xs-12 col-md-12 col-sm-12">
+
+          <h1 class="header-text" style="font-size:3em;"><b>Hello There</b></h1>
+        <div class="header-text" style="margin: 15 auto 25;">
+          <div style="width:100px; height:10px;background-color:#000000;"></div>
         </div>
-        <div class="col-xs-12 col-md-7 col-sm-7">
-          <h1 class="header-text"><b>Andrew Hong</b> is a multidisciplinary designer based in New York.
+
+          <h1 class="header-text"><b>Andrew Hong</b> is a product designer based in New York.
             He works on cool things at <a href="https://www.troveup.com" target="_blank" style="color:#f26868;">TROVE</a> and is secretly a lion tamer, luchador,
             and who knows what else.</h1>
         </div>
@@ -151,7 +157,7 @@
         <div class="row-overlay col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1"></div>
         <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1 section-image-container section trove-sellers-bg">
           <img class="img-responsive img project2"
-               src="https://s3.amazonaws.com/ahong-portfolio-images/trove-sellers-mockup.jpg"
+               src="https://s3.amazonaws.com/ahong-portfolio-images/trove-seller-mock.jpg"
                alt="Trove Sellers Platform">
         </div>
       <div  class="col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-5 section row-name" >
@@ -245,7 +251,10 @@
 
       <div class="row">
         <div class="col-xs-12 col-md-12 section bottom">
-         <div class="project-text img-text-overlay center">
+          <!-- <div>
+            <p class="designed-by">Designed and built by Andrew Hong</p>
+          </div> -->
+         <div class="bottom-nav">
             <h3 class="project-name">HELLO THERE</h3>
             <p class="about-description">I'm Andrew Hong. I design at Trove in New York City.</p>
             <div style="margin-top:25px;">
@@ -273,6 +282,9 @@
   var currentUrl = window.location.pathname;
 
   $('a').on('click', function (event) {
+
+    if (!this.href.includes("facebook") && !this.href.includes("instagram") && !this.href.includes("linkedin") && !this.href.includes("troveup")){
+
     var link = this.href;
 
     setPageState(link);
@@ -280,6 +292,8 @@
     currentUrl = link;
 
     return false;
+    }
+    return true;
 
   });
 

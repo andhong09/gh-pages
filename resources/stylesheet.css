@@ -198,10 +198,10 @@ html{
     }
 
     .section.bottom{
-      background-color:#ffffff;
-      min-height:350px;
+      background-color:#f6f6f6;
+      min-height:450px;
       text-align:center;
-      border-top:2px solid #f6f6f6;
+      border-top:2px solid #ffffff;
     }
 
     .img.project1{
@@ -210,7 +210,7 @@ html{
     margin: 0 auto;
     /*top: 100px;
     position: relative;*/
-    padding:0 20 0;
+    padding:0 30 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -227,7 +227,6 @@ html{
     margin: 0 auto;
     /*top: 100px;
     position: relative;*/
-    padding:0 20 0;
     padding:0 20 0;
     position: absolute;
     top: 50%;
@@ -355,7 +354,7 @@ html{
     }
 
     .header-text{
-      max-width:800px;
+      max-width:1000px;
       letter-spacing:2px;
       text-transform:uppercase;
       margin:0 auto;
@@ -366,9 +365,8 @@ html{
 
     @media (max-width: 768px) {
       .header-text{
-        font-size:1.3em;
+        font-size:1em;
         padding:0 10 0;
-        text-align:center;
       }
     }
 
@@ -411,6 +409,11 @@ html{
 
     .img-full-width{
       width:100%;
+      margin:0 auto;
+    }
+
+    .img-80-width{
+      width: 80%;
       margin:0 auto;
     }
 
@@ -499,7 +502,7 @@ html{
       position:relative;
       margin:0 auto;
       text-align: center;
-      background-color:#f6f6f6;
+      /*background-color:#f6f6f6;*/
       min-height:550px;
       width:90%;
   }
@@ -524,6 +527,7 @@ html{
   @media(max-width: 768px) {
     .welcome-banner-container{
       min-height:400px;
+      padding-bottom:50px;
     }
     .welcome-banner-container.index{
       -o-background-size: 80% auto;
@@ -839,4 +843,21 @@ html{
 
   .other-page:hover{
     border-bottom:2px solid #000000;
+  }
+
+  .designed-by{
+    text-align: left;
+    position: relative;
+    left: -10px;
+    top: 285px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    font-size: 12px;
+  }
+
+  .bottom-nav{
+    padding-top: 100px; 
+    margin: 0 auto;
+    position: relative;
   }
