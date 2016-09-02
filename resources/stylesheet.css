@@ -680,6 +680,10 @@ html{
   @media (max-width: 575px) {
       
 
+      .img-text-overlay{
+        text-align:center;
+      }
+
       .img-text-overlay.right{
         left:0;
         right:0;
