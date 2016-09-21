@@ -422,6 +422,12 @@ html{
       margin:0 auto;
     }
 
+    .img-small{
+      width:60%;
+      margin:0 auto;
+    }
+
+
     .img-text-block{
       margin-bottom:100px;
     }
